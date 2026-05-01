@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartLearn Portal</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f7fb;
+    }
+
+    .navbar {
+      background: #0d47a1;
+    }
+
+    .navbar a {
+      color: white !important;
+    }
+
+    .hero {
+      background: #e3ecf7;
+      padding: 60px 0;
+    }
+
+    .card {
+      border: none;
+      border-radius: 12px;
+    }
+
+    .stat-card {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .stat-icon {
+      font-size: 30px;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    .course-card img {
+      height: 120px;
+      object-fit: cover;
+    }
+
+    footer {
+      background: #0d47a1;
+      color: white;
+      padding: 40px 0;
+    }
+
+    footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand text-white fw-bold" href="#">
+      <i class="bi bi-mortarboard"></i> SmartLearn Portal
+    </a>
+
+    <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Results</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+        <li class="nav-item ms-3">
+          <img src="https://i.pravatar.cc/40" class="rounded-circle">
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2 class="fw-bold">Welcome to Student Portal</h2>
+        <p>Manage your courses, results, and profile easily.</p>
+        <button class="btn btn-primary">View Courses</button>
+      </div>
+
+      <div class="col-md-6 text-center">
+        <img src="https://i.pravatar.cc/250" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="container mt-4">
+  <div class="row g-3">
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card stat-card">
+        <div class="stat-icon bg-primary"><i class="bi bi-book"></i></div>
+        <div>
+          <h5>6</h5>
+          <small>Total Courses</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card stat-card">
+        <div class="stat-icon bg-success"><i class="bi bi-check2-square"></i></div>
+        <div>
+          <h5>12</h5>
+          <small>Assignments</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card stat-card">
+        <div class="stat-icon bg-warning"><i class="bi bi-graph-up"></i></div>
+        <div>
+          <h5>3.8</h5>
+          <small>GPA</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6">
+      <div class="card stat-card">
+        <div class="stat-icon bg-purple bg-secondary"><i class="bi bi-calendar"></i></div>
+        <div>
+          <h5>2</h5>
+          <small>Upcoming Exams</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container mt-4">
+  <div class="row">
+
+    <!-- LEFT SIDE -->
+    <div class="col-lg-8">
+
+      <!-- COURSES -->
+      <h5 class="mb-3">My Courses</h5>
+      <div class="row g-3">
+
+        <div class="col-md-6">
+          <div class="card course-card p-3">
+            <h6>Web Development</h6>
+            <p>HTML, CSS, Bootstrap & JS</p>
+            <button class="btn btn-primary btn-sm">View Course</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card course-card p-3">
+            <h6>Database Systems</h6>
+            <p>SQL & Database Design</p>
+            <button class="btn btn-primary btn-sm">View Course</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card course-card p-3">
+            <h6>Networking</h6>
+            <p>Computer Networks</p>
+            <button class="btn btn-primary btn-sm">View Course</button>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card course-card p-3">
+            <h6>Software Engineering</h6>
+            <p>SDLC & UML</p>
+            <button class="btn btn-primary btn-sm">View Course</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RESULTS -->
+      <h5 class="mt-4">My Results</h5>
+      <div class="card p-3">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Course</th>
+              <th>Score</th>
+              <th>Grade</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Web Dev</td>
+              <td>85</td>
+              <td><span class="badge bg-success">A</span></td>
+              <td>Excellent</td>
+            </tr>
+
+            <tr>
+              <td>Database</td>
+              <td>78</td>
+              <td><span class="badge bg-primary">B+</span></td>
+              <td>Good</td>
+            </tr>
+
+            <tr>
+              <td>Networking</td>
+              <td>90</td>
+              <td><span class="badge bg-success">A</span></td>
+              <td>Excellent</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="col-lg-4 mt-4 mt-lg-0">
+
+      <!-- PROFILE -->
+      <div class="card p-3 mb-3 text-center">
+        <img src="https://i.pravatar.cc/100" class="rounded-circle mx-auto mb-2">
+        <h6>John Doe</h6>
+        <p class="small">Computer Science</p>
+        <p class="small">john@email.com</p>
+      </div>
+
+      <!-- CONTACT -->
+      <div class="card p-3">
+        <h6>Contact Us</h6>
+
+        <input type="text" class="form-control mb-2" placeholder="Your Name">
+        <input type="email" class="form-control mb-2" placeholder="Your Email">
+
+        <select class="form-control mb-2">
+          <option>Select Subject</option>
+        </select>
+
+        <textarea class="form-control mb-2" rows="3" placeholder="Message"></textarea>
+
+        <button class="btn btn-success">Send Message</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="mt-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+        <h5>SmartLearn</h5>
+        <p>Empowering students for a better tomorrow.</p>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">Results</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4">
+        <h6>Contact</h6>
+        <p>Accra, Ghana</p>
+        <p>+233 55 123 4567</p>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-3">
+      <small>© 2026 SmartLearn Portal</small>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
